@@ -1,15 +1,15 @@
-from tkinter import *
+import tkinter as tk #import tkinter module
+
+class Calculator(tk.Frame): #create class Calculator
 #root window
-root = Tk()
+    def __init__(self, master): #create constructor
+        self.master = master #create master
+        master.title("Pocket Calculator") #set title
+        master.geometry("300x300") #set geometry
+        master.resizable(0,0) #set resizable
+        
 
-#title
-root.title('Pocket Calculator')
-#dimensions
-root.geometry("400x400")
-
-#calculator class
-class Calculator:
-    def __init__(self) -> None:
-        pass
 #execute
+root = tk.Tk() #create root window
+app = Calculator(root)
 root.mainloop()
