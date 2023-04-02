@@ -14,4 +14,4 @@ A simple paint program with color, size, shape and background options developed 
 - Press and hold the left mouse button to draw on the canvas.
 - Release the mouse button to complete a shape.
 - To clear the canvas, click the "Clear" button or use the keyboard shortcut Ctrl+z.
-- To exit the program, close the window or use the keyboard shortcut Ctrl+c.
+- To exit the program, close the window.
