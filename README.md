@@ -4,7 +4,7 @@ A simple paint program with color, size, shape and background options developed 
 
 # Installation
 - Ensure that Python 3 is installed on your computer. If not, download it from the official website: https://www.python.org/downloads/
-- Download or clone the project from the GitHub repository: https://github.com/<username>/<repository>.
+- Download or clone the project from the GitHub repository: https://github.com/AndrewB1998/Painter.
 - Install the required module using the command pip install tkinter.
   
 # Usage
