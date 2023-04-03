@@ -40,17 +40,17 @@ class Painter(Frame):
             var.set(values[0])
             menu = OptionMenu(master, var, *values, command=func)    
             menu.config(font=("Georgia", 10), bg='#FFEFD5')
-            menu.grid(row=2, column=col, sticky="NSEW")    
+            menu.grid(row=2, column=col, sticky="NEW")    
         
         # Create canvas
         canvas_width = 1000
         canvas_height = 600
         self.canvas = Canvas(master, width=canvas_width, height=canvas_height, bg=self.given_bg)
-        self.canvas.grid(columns=6, sticky="NSEW", padx= 8)
+        self.canvas.grid(columns=6, sticky="NSEW", padx= 5, pady=5)
         
         #Create clear canvas button
         clear_button = Button(master, text="Clear (ctrl+z)", font= ("Georgia", 10), bg='#FFEFD5', command=self.canvas_clear)
-        clear_button.grid(row=4, column=0, sticky="W", padx=8, pady=5)
+        clear_button.grid(row=4, column=0, sticky="W", padx=8, pady=8)
         master.bind("<Control-z>", self.canvas_clear)    
         
         # Mouse bindings 
@@ -78,6 +78,7 @@ class Painter(Frame):
     def set_bg(self, bg):
         self.given_bg = bg
         self.canvas.config(bg=self.given_bg)
+        
         
     # Draw in realtime
     def draw(self, event):
