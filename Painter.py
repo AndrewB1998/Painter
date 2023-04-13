@@ -46,7 +46,7 @@ class Painter(Frame):
         canvas_width = 1000
         canvas_height = 600
         self.canvas = Canvas(master, width=canvas_width, height=canvas_height, bg=self.given_bg)
-        self.canvas.grid(columns=6, sticky="NSEW", padx= 5, pady=5)
+        self.canvas.grid(columns=4, sticky="NSEW", padx= 5, pady=5)
         
         #Create clear canvas button
         clear_button = Button(master, text="Clear (ctrl+z)", font= ("Georgia", 10), bg='#FFEFD5', command=self.canvas_clear)
@@ -106,6 +106,7 @@ class Painter(Frame):
                 y1, y2 = y2, y1
             self.canvas.create_rectangle(x1, y1, x2, y2, fill=self.given_color, width=self.given_size, outline= "")
             
+            
         elif self.given_shape == "Triangle":
             self.canvas.create_polygon(x1, y1, x2, y2, x1-(x2-x1), y2, fill=self.given_color, width=self.given_size, outline= "")
         
@@ -116,4 +117,5 @@ def main():
 
 if __name__ == "__main__": # Call main function
     main()
+
 
