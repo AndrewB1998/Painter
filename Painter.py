@@ -24,12 +24,13 @@ class Painter(Frame):
         
         # Row and column configuration
         Grid.rowconfigure(self.master, 3, weight=1)
+
         for col in range(5):
             Grid.columnconfigure(self.master, col, weight=1)
         
         # Create labels for optionmenu buttons
         for col, label in enumerate(dt.label):
-            Label(master, text=label, font=("Georgia", 14)).grid(row=1, column=col, sticky="EW")
+            Label(master, text=label, font=("Georgia", 14), width= 15).grid(row=1, column=col, sticky="EW")
         
         # Create OptionMenu buttons using loop and their options + make them scalable left/right 
         color_var, shape_var, bg_var, font_var = StringVar(master), StringVar(master), StringVar(master), StringVar(master)
@@ -57,14 +58,14 @@ class Painter(Frame):
         
         # Info button
         self.info_button = Button(master, text="Info", font= ("Georgia", 10), bg='#FFEFD5', cursor="hand2", command= self.info)
-        self.info_button.grid(row=4, column=4, sticky="NSEW", padx=5, pady=5)
+        self.info_button.grid(row=4, column=4, columns=2, sticky="NSEW", padx=5, pady=5)
         self.info_button.config(state="normal")
         
         # Text entry box and button
         self.entry_box = Text(master, height=2)
-        self.entry_box.grid(row=4, column=1,columns=2, padx=5, pady=5, sticky="NSEW")
+        self.entry_box.grid(row=4, column=1, columns=2, padx=5, pady=5, sticky="NSEW")
         self.save_button = Button(master, text="Save text", font= ("Georgia", 10), width=25, bg='#FFEFD5', cursor="hand2", command=self.save)
-        self.save_button.grid(row=4, column=3, padx=5, pady=5, sticky="NSW")
+        self.save_button.grid(row=4, column=3, padx=5, pady=5, sticky="NSEW")
         
         # Mouse bindings 
         handlers = [self.draw, self.press_mouse, self.release_mouse]
