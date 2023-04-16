@@ -10,8 +10,5 @@ A simple paint program with color, size, shape and background options developed 
 # Usage
 - Open the terminal and navigate to the project directory.
 - Run the program using the command python painter.py.
-- Use the option menus to select the color, size, and shape of the brush.
-- Press and hold the left mouse button to draw on the canvas.
-- Release the mouse button to complete a shape.
-- To clear the canvas, click the "Clear" button or use the keyboard shortcut Ctrl+z.
+- User manual on "Info" button
 - To exit the program, close the window.
