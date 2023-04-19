@@ -1,6 +1,6 @@
 # Painter (Programming course DTEK2074)
 
-A simple paint program with color, size, shape and background options developed using the tkinter module in Python.
+A simple paint program with color, size, text, shape and background options developed using the tkinter module in Python.
 
 # Installation
 - Ensure that Python 3 is installed on your computer. If not, download it from the official website: https://www.python.org/downloads/
