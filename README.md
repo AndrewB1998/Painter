@@ -1,4 +1,4 @@
-# Painter (Programming course DTEK2074)
+# Painter
 
 A simple paint program with color, size, text, shape and background options developed using the tkinter module in Python.
 
