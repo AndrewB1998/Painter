@@ -2,6 +2,9 @@
 
 A simple paint program with color, size, text, shape and background options developed using the tkinter module in Python.
 
+# Overview
+![painter](https://github.com/AndrewB1998/Painter/assets/71883814/5a2c18cb-f030-4e6c-87a5-17fb6fe80f97)
+
 # Installation
 - Ensure that Python 3 is installed on your computer. If not, download it from the official website: https://www.python.org/downloads/
 - Download or clone the project from the GitHub repository: https://github.com/AndrewB1998/Painter.
